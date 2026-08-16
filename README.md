@@ -1,17 +1,6 @@
 
 
-### What I work with
 
-**Languages** · Python · C/C++ · C# · VB.NET · JavaScript
-**ML & CV** · PyTorch · scikit-learn · XGBoost · Optuna · OpenCV · Ultralytics YOLO
-**Deployment** · ONNX Runtime · OpenVINO · model export and numerical-agreement validation
-**Embedded & IoT** · ESP32 · Arduino · Raspberry Pi · MQTT · Firebase · sensor acquisition
-**Industrial** · PLC (Siemens S7-1500 / TIA Portal, Omron, Mitsubishi, Keyence) · CODESYS · Modbus TCP · HMI · process control
-**Engineering** · Git · pytest · FastAPI · YAML-driven config · Linux/WSL2 · reproducible pipelines
-
----
-
-### Selected work
 
 **[reactor-plc-trainer](https://github.com/muqsithanif/reactor-plc-trainer)** · A batch chemical reactor in software that students drive with real ladder logic written in Schneider Machine Expert. It implements the CODESYS gateway protocol directly over TCP, exposes 23 industrial I/O tags on the 4-20 mA convention, and carries a 12-chapter beginner course built into the application.
 
@@ -26,15 +15,3 @@
 **[visual-inspection-api](https://github.com/muqsithanif/visual-inspection-api)** · Serves any YOLO-style ONNX export over HTTP, with box decoding and non-maximum suppression implemented directly so the runtime carries no training framework.
 
 **[iot-telemetry-api](https://github.com/muqsithanif/iot-telemetry-api)** · Telemetry ingestion built around the ways field devices misbehave: replayed batches, drifting clocks, and partially malformed payloads. Ships with the ESP32 firmware that feeds it.
-
----
-
-### A note on how I work
-
-I keep failures visible instead of tidying them away. Two export-agreement tests in the UAV project failed before they passed, and both remain in the commit history with the cause recorded. In the forecasting study, several of the winning model's advantages turned out not to reach significance, and the write-up states that.
-
-Reproducibility matters most to me: pinned library versions, dataset hashes, fixed seeds, and enough documentation for a stranger to run the whole thing from a clean checkout.
-
----
-
-📍 Bandung, Indonesia · 📧 muqsithanif29@gmail.com
