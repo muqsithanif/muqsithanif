@@ -1,10 +1,4 @@
-# Muqsit Muhammad Hanif
 
-Industrial Automation and Robotics Engineering graduate. I work across three areas that rarely sit with one person: embedded and control systems, applied machine learning, and documentation that lets someone else verify the result.
-
-Most of what I build has the same shape. Data comes off a sensor or a dataset, a model turns it into a decision, and that decision has to run somewhere real and stay checkable afterwards.
-
----
 
 ### What I work with
 
