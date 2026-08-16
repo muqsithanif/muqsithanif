@@ -19,6 +19,8 @@ Most of what I build has the same shape. Data comes off a sensor or a dataset, a
 
 ### Selected work
 
+**[reactor-plc-trainer](https://github.com/muqsithanif/reactor-plc-trainer)** · A batch chemical reactor in software that students drive with real ladder logic written in Schneider Machine Expert. It implements the CODESYS gateway protocol directly over TCP, exposes 23 industrial I/O tags on the 4-20 mA convention, and carries a 12-chapter beginner course built into the application.
+
 **[multi-uav-perception](https://github.com/muqsithanif/multi-uav-perception)** · Aerial object detection and tracking, from dataset conversion through fine-tuning to optimised CPU inference. I fine-tuned a YOLO nano detector on VisDrone and exported it to ONNX and OpenVINO, verifying that both runtimes still agreed with the original model before measuring latency. Every reported number traces back to a versioned experiment artefact.
 
 **Daily air-quality forecasting for Jakarta** *(undergraduate thesis, repository private)* · Six regression models compared under walk-forward cross-validation that respects time order, tuned with Optuna, with significance testing so the conclusions stay proportional to the evidence. Available on request.
