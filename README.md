@@ -3,7 +3,7 @@
 **AI & Robotics Systems Engineer** | *Bridging Machine Intelligence to Physical & Industrial Systems*
 
 [![GitHub](https://img.shields.io/badge/GitHub-muqsithanif-181717?style=flat-square&logo=github)](https://github.com/muqsithanif)
-[![Kaggle](https://img.shields.io/badge/Kaggle-muqsithanif-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/muqsithanif)
+[![Kaggle](https://img.shields.io/badge/Kaggle-muqsithanif-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/meguminksdj)
 [![Email](https://img.shields.io/badge/Email-muqsithanif29%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:muqsithanif29@gmail.com)
 
 ---
@@ -80,4 +80,4 @@ I design and deploy end-to-end intelligent systems that operate at the intersect
 
 ### Contact & Collaboration
 - **Email:** [muqsithanif29@gmail.com](mailto:muqsithanif29@gmail.com)
-- **Kaggle Profile:** [@muqsithanif](https://www.kaggle.com/muqsithanif)
+- **Kaggle Profile:** [@meguminksdj](https://www.kaggle.com/meguminksdj)
