@@ -11,7 +11,8 @@
 ### Focus & Specialization
 I design and deploy end-to-end intelligent systems that operate at the intersection of **Computer Vision, Real-Time Edge Inference, Robotics Perception, and Industrial Automation**. My work focuses on low-latency inference, deterministic hardware protocols, and robust edge architectures.
 
-- **Edge Vision & Physical AI:** Deploying optimized perception models (ONNX, OpenVINO, TensorRT) with zero-dependency runtime environments.
+- **Robotics & Physical AI:** Autonomous manipulator perception, SE(3) hand-eye coordinate transformations, and smooth trajectory planning.
+- **Edge Vision:** Deploying optimized perception models (ONNX, OpenVINO, TensorRT) with zero-dependency runtime environments.
 - **Industrial Automation & IIoT:** Deterministic telemetry pipelines, Modbus TCP/IP, CODESYS/PLC integration, and industrial loop monitoring.
 - **Applied Machine Learning:** Predictive maintenance, statistical anomaly detection on high-frequency time-series, and aerial multi-object tracking.
 
@@ -21,16 +22,21 @@ I design and deploy end-to-end intelligent systems that operate at the intersect
 
 | Domain | Technologies & Frameworks |
 | :--- | :--- |
+| **Robotics & Control** | 6-DoF Kinematics (FK/IK), Trajectory Planning (Quintic Polynomials), ROS 2, URDF |
 | **AI / ML & Vision** | PyTorch, OpenCV, ONNX Runtime, OpenVINO, YOLO, Albumentations, scikit-learn |
 | **Industrial & Protocols** | Modbus TCP, CODESYS Gateway Protocol, 4–20 mA Current Loops, MQTT, REST APIs |
-| **Robotics & Edge** | Edge Deployments, UAV Perception & Tracking (VisDrone), ESP32 Firmware, Linux/Embedded |
+| **Edge & Embedded** | Edge Deployments, UAV Perception & Tracking, ESP32 Firmware, Linux/Embedded |
 | **Backend & Data Eng** | FastAPI, SQLite/MySQL, NumPy, Pandas, Docker, Git CI/CD |
 
 ---
 
 ### Featured Systems & Repositories
 
-#### 1. Real-Time Vision & Edge Perception
+#### 1. Robotics Perception & Real-Time Vision
+- **[visiongrasp](https://github.com/muqsithanif/visiongrasp)**  
+  *Autonomous 6-DoF Robotic Pick-and-Place with RGB-D Perception*  
+  End-to-end manipulator pipeline integrating pinhole camera ray de-projection, oriented grasp pose estimation, numerical inverse kinematics, and minimum-jerk quintic trajectory planning. Includes 11 automated invariant tests and 3D simulation rendering.
+
 - **[visual-inspection-api](https://github.com/muqsithanif/visual-inspection-api)**  
   *Zero-Framework ONNX Model Serving for Industrial QA*  
   High-throughput HTTP serving engine for YOLO-family ONNX detectors. Features layout auto-detection, pure NumPy NMS from scratch, and eliminates heavy training framework dependencies in production runtime.
