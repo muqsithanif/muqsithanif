@@ -1,99 +1,38 @@
 # Muqsit Hanif
 
-**AI & Robotics Systems Engineer** | *Bridging Machine Intelligence to Physical, Industrial & Environmental Systems*
+**AI & Robotics Systems Engineer**
 
-[![GitHub](https://img.shields.io/badge/GitHub-muqsithanif-181717?style=flat-square&logo=github)](https://github.com/muqsithanif)
-[![Kaggle](https://img.shields.io/badge/Kaggle-meguminksdj-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/meguminksdj)
+[![Kaggle](https://img.shields.io/badge/Kaggle-profile-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/meguminksdj)
 [![Email](https://img.shields.io/badge/Email-muqsithanif29%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:muqsithanif29@gmail.com)
 
----
-
-### Focus & Specialization
-I design and deploy end-to-end intelligent systems that operate at the intersection of **Computer Vision, Real-Time Edge Inference, Robotics Perception, Industrial Automation, and Environmental Climate Tech**. My work focuses on low-latency inference, deterministic hardware protocols, distribution shift robustness, and physical edge architectures.
-
-- **Robotics & Physical AI:** Autonomous 6-DoF manipulator perception, SE(3) hand-eye coordinate transforms, mobile robot (AMR/AGV) SLAM, global A* graph search, and reactive Dynamic Window Approach (DWA).
-- **Environmental AI & Remote Sensing:** Multispectral satellite Earth observation (Copernicus Sentinel-2), burn scar severity assessment (USGS BAER standard), and wastewater treatment soft-sensing.
-- **Industrial Vision & Unsupervised QA:** Memory-bank anomaly detection (PatchCore/Coreset), zero-framework ONNX serving, and pixel-level defect localization.
-- **Competitive Data Science & Robust ML:** Covariate shift quantification, adversarial validation, leakage guard scanning, and importance-weighted cross-validation (IWCV) for tabular pipelines.
-- **Industrial Automation & IIoT:** Deterministic encoder-tracked sorting, Modbus TCP/IP communication, CODESYS gateway integration, and 4–20 mA current loop fault diagnostics.
+I build software where machine learning meets physical equipment: computer vision, robot motion, and industrial automation. Most of the projects below run against simulators or public datasets rather than hardware. Each README says what was measured, on what data, and what the numbers do not cover.
 
 ---
 
-### Technical Matrix
+### Selected work
 
-| Domain | Technologies & Frameworks |
-| :--- | :--- |
-| **Robotics & Motion Control** | 6-DoF Kinematics (FK/IK), Trajectory Planning (Quintic Polynomials), DWA Local Planner, Global A*, ROS 2, URDF |
-| **Earth Observation & Remote Sensing** | Copernicus Sentinel-2 MSI, Radiometric Calibration, NBR/NDVI/NBR2/SI, USGS BAER Standards, Geospatial Hectarage |
-| **Vision & Anomaly Detection** | PatchCore, Coreset Subsampling, Gabor Filter Banks, PyTorch, OpenCV, ONNX Runtime, OpenVINO, YOLO |
-| **Data Science & Environmental ML** | Conformalized Quantile Regression (CQR), Adversarial Validation, Two-Sample KS-Test, Wasserstein-1, LightGBM |
-| **Industrial & Protocols** | Modbus TCP/IP, CODESYS Gateway Protocol, Rotary Optical Encoders, 4–20 mA Loops, MQTT, REST APIs |
-| **Mobile Robotics & Sensing** | 2D Planar LiDAR Raycasting, C-Space Obstacle Inflation, UAV Aerial Perception, ESP32 Firmware |
-| **Backend & Infrastructure** | FastAPI, SQLite/MySQL, NumPy, SciPy, Pandas, Docker, Git CI/CD |
+| Project | What it is | Measured |
+|---|---|---|
+| [multi-uav-perception](https://github.com/muqsithanif/multi-uav-perception) | Aerial detection and tracking: YOLO fine-tuned on VisDrone, ONNX and OpenVINO exports checked for agreement, ByteTrack vs BoT-SORT, and target assignment for three virtual UAVs over a ROS 2 Jazzy graph with a C++ monitor node | mAP50 0.154 → 0.402 on a locked validation subset |
+| [machine-health-monitor](https://github.com/muqsithanif/machine-health-monitor) | Predictive maintenance scored on how early the warning comes, not on accuracy, across five simulated machines | EWMA warns ~9 days before fault onset; Isolation Forest only after it |
+| [reactor-plc-trainer](https://github.com/muqsithanif/reactor-plc-trainer) | Batch-reactor simulator that speaks the CODESYS gateway protocol, so students control it with real ladder logic in Machine Expert; includes a 12-chapter beginner course in Indonesian | Its headless mode generated the 400-batch fouling study used against the machine-health detectors |
+| [modbus-monitor](https://github.com/muqsithanif/modbus-monitor) | Modbus TCP monitoring: engineering-unit scaling, 4–20 mA loop-fault detection, alarm hysteresis, and a plant simulator to run against | End-to-end test over a real TCP socket |
+| [agvnav](https://github.com/muqsithanif/agvnav) | Factory AGV simulation: A* global path, DWA local control on LiDAR only, and safety fields that stop for a worker the robot is never told about | No collisions; closest approach 0.16 m to the worker |
+| [conveyorsort](https://github.com/muqsithanif/conveyorsort) | Reject sorter tracking packages by encoder instead of timer, firing a PLC coil over Modbus TCP, with the belt slowing and stopping mid-run | Reject within 10 mm vs 330 mm for a fixed timer |
 
----
+### More projects
 
-### Featured Systems & Repositories
+- [visiongrasp](https://github.com/muqsithanif/visiongrasp): UR5 pick-and-place in simulation. It covers RGB-D detection, pixel-to-base deprojection, orientation-constrained IK and quintic trajectories.
+- [defectscan](https://github.com/muqsithanif/defectscan): PatchCore-style anomaly detection with a memory bank of patch features and a greedy coreset.
+- [wateraudit](https://github.com/muqsithanif/wateraudit): effluent BOD/COD soft sensors with conformal prediction intervals, tested in time order on the UCI Water Treatment Plant data.
+- [driftdetect](https://github.com/muqsithanif/driftdetect): a dataset-shift audit with FDR-controlled per-column tests, adversarial validation and attribution, tested on injected drift and real plant data.
+- [visual-inspection-api](https://github.com/muqsithanif/visual-inspection-api): serves YOLO-style ONNX detectors over HTTP, with the output layout detected automatically and NMS written in NumPy.
+- [iot-telemetry-api](https://github.com/muqsithanif/iot-telemetry-api): FastAPI telemetry service with JWT auth, idempotent batch ingestion, and the ESP32 firmware that feeds it.
 
-#### 1. Environmental AI, Remote Sensing & Clean Tech
-- **[wildfireseg](https://github.com/muqsithanif/wildfireseg)**  
-  *Multispectral Satellite Earth Observation & Wildfire Burn Scar Assessment*  
-  Processes authentic European Space Agency (ESA) Copernicus Sentinel-2 MSI satellite imagery. Features smoke-penetrating SWIR composites, differenced Normalized Burn Ratio (dNBR), USGS BAER 7-class burn severity mapping, active flaming vs smoldering front detection, and geospatial damage accounting in hectares.
+### Tools I use
 
-- **[wateraudit](https://github.com/muqsithanif/wateraudit)**  
-  *Wastewater Effluent Compliance Monitoring & Online Soft-Sensing*  
-  Evaluated on the authentic benchmark UCI Water Treatment Plant operational dataset (527 records across 38 sensors). Features leak-free tier-partitioned soft-sensors for BOD and COD using Quantile Gradient Boosted Trees with 90% Conformalized Quantile Regression (CQR) bounds, continuous Environmental Compliance Risk Index (ECRI), and log-ratio stage decomposition for settler failure attribution.
-
-#### 2. Competitive Data Science & Production ML Robustness
-- **[driftdetect](https://github.com/muqsithanif/driftdetect)**  
-  *Covariate Shift Quantification, Adversarial Validation & Adaptive Alignment*  
-  Industrial and Kaggle-grade distribution shift engine. Features two-sample Kolmogorov-Smirnov, normalized Wasserstein-1, sample-size calibrated PSI (chi-square null), LightGBM out-of-fold adversarial validation, leakage guard detection, consensus culprit scoring, RAFE feature elimination, and importance-weighted cross-validation (IWCV).
-
-- **[machine-health-monitor](https://github.com/muqsithanif/machine-health-monitor)**  
-  *Early Mechanical Fault Detection on Industrial Bearings*  
-  Benchmarking statistical time-series control charts against modern unsupervised ML; demonstrates EWMA providing a 9-day earlier warning horizon over Isolation Forest for developing mechanical failures.
-
-- **[iot-telemetry-api](https://github.com/muqsithanif/iot-telemetry-api)**  
-  *Idempotent Industrial Sensor Ingestion Pipeline*  
-  FastAPI telemetry service with JWT authentication, relational storage, and accompanying ESP32 firmware for edge sensor telemetry streaming.
-
-#### 3. Robotics Perception & Autonomous Navigation
-- **[visiongrasp](https://github.com/muqsithanif/visiongrasp)**  
-  *Autonomous 6-DoF Robotic Manipulator with RGB-D Perception*  
-  End-to-end pick-and-place pipeline integrating pinhole camera ray de-projection, oriented grasp pose estimation, numerical inverse kinematics, and minimum-jerk quintic trajectory planning. Includes 11 automated invariant tests and 3D simulation rendering.
-
-- **[agvnav](https://github.com/muqsithanif/agvnav)**  
-  *Autonomous Factory AMR / AGV Navigation & Obstacle Avoidance*  
-  Full mobile robot navigation stack for factory shop floors featuring 2D planar LiDAR raycasting, configuration-space obstacle dilation, global A* path planning with string-pulling smoothing, and reactive Dynamic Window Approach (DWA) for dynamic worker avoidance.
-
-- **[multi-uav-perception](https://github.com/muqsithanif/multi-uav-perception)**  
-  *Aerial Object Detection & Tracking Pipeline*  
-  Fine-tuned vision detectors on aerial imagery (VisDrone), optimized via ONNX and OpenVINO with cross-format agreement validation, integrated into multi-target tracking benchmarks.
-
-#### 4. Industrial Machine Vision & Quality Assurance
-- **[defectscan](https://github.com/muqsithanif/defectscan)**  
-  *Industrial Unsupervised Visual Anomaly Detection & Defect Localization*  
-  PatchCore-style inspection pipeline trained exclusively on nominal workpieces. Employs multi-scale steerable Gabor embeddings, greedy minimax k-center coreset subsampling (85% memory reduction), and k-NN distance scoring to achieve 100% image-level AUROC and 99.1% pixel-level localization on manufacturing flaws.
-
-- **[visual-inspection-api](https://github.com/muqsithanif/visual-inspection-api)**  
-  *Zero-Framework ONNX Model Serving for Industrial QA*  
-  High-throughput HTTP serving engine for YOLO-family ONNX detectors. Features layout auto-detection, pure NumPy NMS from scratch, and eliminates heavy training framework dependencies in production runtime.
-
-#### 5. Industrial Automation, IIoT & Hardware-in-the-Loop
-- **[conveyorsort](https://github.com/muqsithanif/conveyorsort)**  
-  *Closed-Loop Vision-to-PLC Industrial Reject Sorter*  
-  Deterministic package sorting system immune to conveyor speed variations. Synchronizes high-speed vision decisions with an optical rotary incremental encoder shift register, actuating pneumatic reject solenoids over Modbus TCP at sub-millimeter precision.
-
-- **[modbus-monitor](https://github.com/muqsithanif/modbus-monitor)**  
-  *Industrial Equipment & Loop Health Monitor over Modbus TCP*  
-  Engineering-unit scaling engine, 4–20 mA loop-fault detection (under-range/over-range), alarm hysteresis, and a zero-hardware plant simulator for deterministic testing.
-
-- **[reactor-plc-trainer](https://github.com/muqsithanif/reactor-plc-trainer)**  
-  *Batch Reactor Simulator with CODESYS Gateway Protocol*  
-  Hardware-free industrial simulation bridge allowing real ladder logic in Machine Expert / CODESYS to control virtual batch processing plants.
-
----
-
-### Contact & Collaboration
-- **Email:** [muqsithanif29@gmail.com](mailto:muqsithanif29@gmail.com)
-- **Kaggle Profile:** [@meguminksdj](https://www.kaggle.com/meguminksdj)
+- **Languages:** Python, C++, VB.NET, Arduino (ESP32)
+- **Vision and ML:** PyTorch, Ultralytics YOLO, OpenCV, ONNX Runtime, OpenVINO, scikit-learn, LightGBM
+- **Robotics:** ROS 2 Jazzy, URDF with ikpy, A* and DWA planning
+- **Industrial:** Modbus TCP (pymodbus), the CODESYS gateway, 4–20 mA signals, ladder logic
+- **Backend:** FastAPI, SQLAlchemy, MySQL/SQLite, Docker Compose
