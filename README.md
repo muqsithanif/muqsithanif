@@ -23,7 +23,6 @@ I build software where machine learning meets physical equipment: computer visio
 ### More projects
 
 - [visiongrasp](https://github.com/muqsithanif/visiongrasp): UR5 pick-and-place in simulation. It covers RGB-D detection, pixel-to-base deprojection, orientation-constrained IK and quintic trajectories.
-- [defectscan](https://github.com/muqsithanif/defectscan): PatchCore-style anomaly detection with a memory bank of patch features and a greedy coreset.
 - [wateraudit](https://github.com/muqsithanif/wateraudit): effluent BOD/COD soft sensors with conformal prediction intervals, tested in time order on the UCI Water Treatment Plant data.
 - [driftdetect](https://github.com/muqsithanif/driftdetect): a dataset-shift audit with FDR-controlled per-column tests, adversarial validation and attribution, tested on injected drift and real plant data.
 - [visual-inspection-api](https://github.com/muqsithanif/visual-inspection-api): serves YOLO-style ONNX detectors over HTTP, with the output layout detected automatically and NMS written in NumPy.
