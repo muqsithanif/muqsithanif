@@ -38,11 +38,11 @@ I design and deploy end-to-end intelligent systems that operate at the intersect
 #### 1. Environmental AI, Remote Sensing & Clean Tech
 - **[wildfireseg](https://github.com/muqsithanif/wildfireseg)**  
   *Multispectral Satellite Earth Observation & Wildfire Burn Scar Assessment*  
-  Processes authentic European Space Agency (ESA) Copernicus Sentinel-2 MSI satellite imagery. Features smoke-penetrating SWIR composites, differenced Normalized Burn Ratio (dNBR), USGS BAER 7-class burn severity mapping, active flaming vs smoldering front detection, and geospatial damage accounting in hectares.
+  Processes European Space Agency (ESA) Copernicus Sentinel-2 MSI satellite imagery. Features smoke-penetrating SWIR composites, differenced Normalized Burn Ratio (dNBR), USGS BAER 7-class burn severity mapping, active flaming vs smoldering front detection, and geospatial damage accounting in hectares.
 
 - **[wateraudit](https://github.com/muqsithanif/wateraudit)**  
   *Wastewater Effluent Compliance Monitoring & Online Soft-Sensing*  
-  Evaluated on the authentic benchmark UCI Water Treatment Plant operational dataset (527 records across 38 sensors). Features leak-free tier-partitioned soft-sensors for BOD and COD using Quantile Gradient Boosted Trees with 90% Conformalized Quantile Regression (CQR) bounds, continuous Environmental Compliance Risk Index (ECRI), and log-ratio stage decomposition for settler failure attribution.
+  Evaluated on the benchmark UCI Water Treatment Plant operational dataset (527 records across 38 sensors). Features leak-free tier-partitioned soft-sensors for BOD and COD using Quantile Gradient Boosted Trees with 90% Conformalized Quantile Regression (CQR) bounds, continuous Environmental Compliance Risk Index (ECRI), and log-ratio stage decomposition for settler failure attribution.
 
 #### 2. Competitive Data Science & Production ML Robustness
 - **[driftdetect](https://github.com/muqsithanif/driftdetect)**  
