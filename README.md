@@ -28,10 +28,3 @@ I build software where machine learning meets physical equipment: computer visio
 - [visual-inspection-api](https://github.com/muqsithanif/visual-inspection-api): serves YOLO-style ONNX detectors over HTTP, with the output layout detected automatically and NMS written in NumPy.
 - [iot-telemetry-api](https://github.com/muqsithanif/iot-telemetry-api): FastAPI telemetry service with JWT auth, idempotent batch ingestion, and the ESP32 firmware that feeds it.
 
-### Tools I use
-
-- **Languages:** Python, C++, VB.NET, Arduino (ESP32)
-- **Vision and ML:** PyTorch, Ultralytics YOLO, OpenCV, ONNX Runtime, OpenVINO, scikit-learn, LightGBM
-- **Robotics:** ROS 2 Jazzy, URDF with ikpy, A* and DWA planning
-- **Industrial:** Modbus TCP (pymodbus), the CODESYS gateway, 4–20 mA signals, ladder logic
-- **Backend:** FastAPI, SQLAlchemy, MySQL/SQLite, Docker Compose
